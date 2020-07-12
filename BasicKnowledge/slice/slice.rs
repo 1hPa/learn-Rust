@@ -13,4 +13,8 @@ fn main(){
     b1[0] = 20;
     println!("{:?}", b);
     println!("{:?}", b1);
+
+    let c = &a[2..5];
+    println!("{:?}", c);
+    println!("{}", c.len());
 }
