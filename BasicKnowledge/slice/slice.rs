@@ -21,4 +21,13 @@ fn main(){
     let d = &a[3..];
     println!("{:?}", d);
     println!("{}", d.len());
+
+    {
+        let e = &mut b[..];
+        e[1] = 20;
+        println!("{}", e[1]);
+        /*compiler err
+        b[1] = 30;
+        */
+    }
 }
