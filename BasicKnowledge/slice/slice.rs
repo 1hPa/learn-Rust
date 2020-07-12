@@ -17,4 +17,8 @@ fn main(){
     let c = &a[2..5];
     println!("{:?}", c);
     println!("{}", c.len());
+
+    let d = &a[3..];
+    println!("{:?}", d);
+    println!("{}", d.len());
 }
