@@ -10,3 +10,9 @@ fn distance(p1: &Point3D, p2: &Point3D) -> f64{
     let dz = p1.z - p2.z;
     (dx*dx + dy*dy + dz*dz).sqrt();
 }
+
+fn main() {
+    let p1 = Point3D{x:0.0, y:0.0, z:0.0};
+    let p2 = Point3D{x:1.0, y:1.0, z:1.0};
+    println!("{}", distance(&p1, &p2));
+}
