@@ -8,7 +8,7 @@ fn distance(p1: &Point3D, p2: &Point3D) -> f64{
     let dx = p1.x - p2.x;
     let dy = p1.y - p2.y;
     let dz = p1.z - p2.z;
-    (dx*dx + dy*dy + dz*dz).sqrt();
+    (dx*dx + dy*dy + dz*dz).sqrt()
 }
 
 fn main() {
