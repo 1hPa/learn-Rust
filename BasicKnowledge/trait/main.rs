@@ -13,3 +13,18 @@ impl Point{
         Point{x: x1, y: y1}
     }
 }
+
+// Implementation
+impl Distance for Point{
+    fn distance (&self, p: &Point) -> f64{
+        let dx = self.x - p.x;
+        let dy = self.y - p.y;
+        (dx * dx + dy * dy).sqrt()
+    }
+}
+
+fn main(){
+    let p1 = Point::new(0.0,0.0);
+    let p2 = Point::new(10.0, 10.0);
+    println!("{}", p1.distance(&p2));
+}
