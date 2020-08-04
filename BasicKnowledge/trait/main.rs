@@ -23,6 +23,11 @@ impl Distance for Point{
     }
 }
 
+// three dimensional point
+struct Point{
+    x: f64, y: f64, z: f64
+}
+
 fn main(){
     let p1 = Point::new(0.0,0.0);
     let p2 = Point::new(10.0, 10.0);
