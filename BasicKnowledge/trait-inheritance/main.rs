@@ -5,3 +5,5 @@ trait Foo {
 trait Bar : Foo{
     fn method_b(&self);
 }
+
+struct Baz;
